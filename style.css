@@ -1,3 +1,11 @@
+/* Color Palette */
+:root {
+    --primary-blue: #002855;
+    --secondary-blue: #00A6FB;
+    --emerald-green: #50C878;
+    --pure-white: #FFFFFF;
+}
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -9,53 +17,68 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header Background */
 header {
     text-align: center;
-    padding: 50px 0;
-    background-color: #f4f4f4;
+    padding: 150px 0;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-color: var(--primary-blue); /* Update background color */
+    color: var(--pure-white); /* Update text color */
 }
 
+/* Style the services section */
 .services {
     text-align: center;
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
-.services ul {
-    list-style: none;
-}
-
-.services li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
+/* Style the call-to-action section */
 .cta {
     text-align: center;
-    padding: 50px 0;
-    background-color: #f4f4f4;
+    padding: 100px 0;
+    background-color: var(--secondary-blue); /* Update background color */
+    color: var(--pure-white); /* Update text color */
 }
 
-.cta form {
-    margin-top: 20px;
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
+.cta p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Style the email input and button */
 .cta input[type="email"] {
     padding: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
 }
 
 .cta button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    padding: 12px 30px;
+    background-color: var(--pure-white); /* Update background color */
+    color: var(--secondary-blue); /* Update text color */
     border: none;
+    border-radius: 5px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.cta button:hover {
+    background-color: var(--secondary-blue); /* Update background color */
+    color: var(--pure-white); /* Update text color */
+}
+
+/* Style the footer */
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--emerald-green); /* Update background color */
+    color: var(--pure-white); /* Update text color */
 }
