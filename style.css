@@ -1,0 +1,61 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.services {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.services ul {
+    list-style: none;
+}
+
+.services li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.cta {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.cta form {
+    margin-top: 20px;
+}
+
+.cta input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
