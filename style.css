@@ -1,54 +1,41 @@
 /* Color Palette */
 :root {
-    --primary-blue: #002855;
-    --secondary-blue: #00A6FB;
-    --emerald-green: #50C878;
+    --dark-green: #006400;
+    --medium-green: #008000;
+    --light-green: #00B300;
+    --off-white: #F0F0F0;
     --pure-white: #FFFFFF;
 }
 
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Use Corbel font for the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Corbel", Arial, sans-serif;
 }
 
 /* Header Background */
 header {
     text-align: center;
     padding: 150px 0;
-    background-image: url('Spark an Idea.png');
+    background-image: url('Spark an Idea.png'); /* Update background image path */
     background-size: cover;
-    background-color: var(--primary-blue); /* Update background color */
-    color: var(--pure-white); /* Update text color */
+    background-color: var(--dark-green); /* Update background color */
+    color: var(--off-white); /* Update text color */
 }
 
 /* Style the services section */
 .services {
     text-align: center;
     padding: 80px 0;
+    background-color: var(--medium-green); /* Update background color */
+    color: var(--off-white); /* Update text color */
 }
 
 /* Style the call-to-action section */
 .cta {
     text-align: center;
     padding: 100px 0;
-    background-color: var(--secondary-blue); /* Update background color */
-    color: var(--pure-white); /* Update text color */
-}
-
-.cta h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.cta p {
-    font-size: 18px;
-    margin-bottom: 40px;
+    background-color: var(--light-green); /* Update background color */
+    color: var(--off-white); /* Update text color */
 }
 
 /* Style the email input and button */
@@ -61,8 +48,8 @@ header {
 
 .cta button {
     padding: 12px 30px;
-    background-color: var(--pure-white); /* Update background color */
-    color: var(--secondary-blue); /* Update text color */
+    background-color: var(--off-white); /* Update background color */
+    color: var(--dark-green); /* Update text color */
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -71,14 +58,14 @@ header {
 }
 
 .cta button:hover {
-    background-color: var(--secondary-blue); /* Update background color */
-    color: var(--pure-white); /* Update text color */
+    background-color: var(--dark-green); /* Update background color */
+    color: var(--off-white); /* Update text color */
 }
 
 /* Style the footer */
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: var(--emerald-green); /* Update background color */
-    color: var(--pure-white); /* Update text color */
+    background-color: var(--dark-green); /* Update background color */
+    color: var(--off-white); /* Update text color */
 }
