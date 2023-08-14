@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Dynamic Business Analytics</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="99060708.png" alt="Your Branding Logo"> <!-- Add your branding logo -->
-        <h1>Data Brilliance</h1>
-        <p>Revealing Insights, Driving Success</p>
-    </header>
-    <section class="services">
-        <!-- Services content here -->
-    </section>
-    <section class="cta">
-        <!-- Call-to-action content here -->
-    </section>
-    <footer>
-        <p>&copy; 2023 Data Brilliance. All rights reserved.</p>
-    </footer>
+    <div class="side-panel">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button class="close-btn" id="close-btn">&times;</button>
+        </div>
+        <ul class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <button class="open-btn" id="open-btn">&#9776; Open Menu</button>
+    <script src="scripts.js"></script>
 </body>
 </html>
