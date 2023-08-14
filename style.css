@@ -20,6 +20,16 @@ header {
     background-size: cover;
     background-color: var(--dark-green); /* Update background color */
     color: var(--off-white); /* Update text color */
+    position: relative; /* Ensure positioning for the logo */
+}
+
+/* Style the branding logo */
+header .logo {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 100px; /* Adjust the width of the logo */
+    height: auto;
 }
 
 /* Style the services section */
@@ -48,4 +58,24 @@ header {
 
 .cta button {
     padding: 12px 30px;
-    background-color: var
+    background-color: var(--off-white); /* Update background color */
+    color: var(--dark-green); /* Update text color */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta button:hover {
+    background-color: var(--dark-green); /* Update background color */
+    color: var(--off-white); /* Update text color */
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--dark-green); /* Update background color */
+    color: var(--off-white); /* Update text color */
+}
