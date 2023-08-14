@@ -1,81 +1,72 @@
-/* Color Palette */
-:root {
-    --dark-green: #00502D;
-    --medium-green: #006739;
-    --light-green: #008148;
-    --off-white: #F0F0F0;
-    --pure-white: #FFFFFF;
-}
-
-/* Use Corbel font for the entire page */
 body {
-    font-family: "Corbel", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Header Background */
-header {
-    text-align: center;
-    padding: 300px 0; /* Update header padding for double height */
-    background-image: url('Spark an Idea.png'); /* Update background image path */
-    background-size: cover;
-    background-color: var(--dark-green); /* Update background color */
-    color: var(--off-white); /* Update text color */
-    position: relative; /* Ensure positioning for the logo */
+.side-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-/* Style the branding logo */
-header .logo {
-    position: absolute;
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    width: 260px; /* Adjust the width of the logo */
-    height: 250px;
+.side-panel .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #222;
+    color: white;
+    height: 60px;
 }
 
-/* Style the services section */
-.services {
-    text-align: center;
-    padding: 80px 0;
-    background-color: var(--medium-green); /* Update background color */
-    color: var(--off-white); /* Update text color */
+.side-panel .menu-header h2 {
+    margin: 0;
 }
 
-/* Style the call-to-action section */
-.cta {
-    text-align: center;
-    padding: 100px 0;
-    background-color: var(--light-green); /* Update background color */
-    color: var(--off-white); /* Update text color */
+.side-panel .menu-items {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Style the email input and button */
-.cta input[type="email"] {
-    padding: 10px;
-    width: 300px;
+.side-panel .menu-items li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.side-panel .menu-items li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.side-panel .menu-items li a:hover {
+    color: #f1f1f1;
+}
+
+.open-btn {
+    font-size: 20px;
     border: none;
-    border-radius: 5px;
-}
-
-.cta button {
-    padding: 12px 30px;
-    background-color: var(--off-white); /* Update background color */
-    color: var(--dark-green); /* Update text color */
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
+    background-color: #111;
+    color: white;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 15px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
 }
 
-.cta button:hover {
-    background-color: var(--dark-green); /* Update background color */
-    color: var(--off-white); /* Update text color */
-}
-
-/* Style the footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: var(--dark-green); /* Update background color */
-    color: var(--off-white); /* Update text color */
+.close-btn {
+    font-size: 30px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
