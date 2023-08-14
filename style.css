@@ -1,8 +1,8 @@
 /* Color Palette */
 :root {
-    --dark-green: #006400;
-    --medium-green: #008000;
-    --light-green: #00B300;
+    --dark-green: #00502D;
+    --medium-green: #006739;
+    --light-green: #008148;
     --off-white: #F0F0F0;
     --pure-white: #FFFFFF;
 }
@@ -15,7 +15,7 @@ body {
 /* Header Background */
 header {
     text-align: center;
-    padding: 150px 0;
+    padding: 300px 0; /* Update header padding for double height */
     background-image: url('Spark an Idea.png'); /* Update background image path */
     background-size: cover;
     background-color: var(--dark-green); /* Update background color */
@@ -48,24 +48,4 @@ header {
 
 .cta button {
     padding: 12px 30px;
-    background-color: var(--off-white); /* Update background color */
-    color: var(--dark-green); /* Update text color */
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.cta button:hover {
-    background-color: var(--dark-green); /* Update background color */
-    color: var(--off-white); /* Update text color */
-}
-
-/* Style the footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: var(--dark-green); /* Update background color */
-    color: var(--off-white); /* Update text color */
-}
+    background-color: var
